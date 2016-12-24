@@ -5,12 +5,23 @@
 #include <iostream>
 #include "TMatrix.h"
 #include "MatrixTest.h"
-#include <cppunit\TestResult.h>
 #include <cppunit\Exception.h>
+#include <cppunit\ui\text\TestRunner.h>
+#include <cppunit\ui\text\TextTestRunner.h>
+
 
 
 int main()
 {
+
+    CPPUNIT_TEST_SUITE_REGISTRATION(MatrixTest);
+    CppUnit::TextUi::TestRunner runner;
+    CppUnit::TestFactoryRegistry &registry = CppUnit::TestFactoryRegistry::getRegistry();
+    runner.addTest(registry.makeTest());
+    runner.run();
+
+
+/*
     using namespace tobechanged;
 
     Matrix<double> matrix = Matrix<double>(2, 2);
@@ -66,7 +77,7 @@ int main()
 
     Matrix<double> multiply = m_mult_op_1 * m_mult_op_2;
     multiply.print_out();
-  
+  */
 
     return 0;
 }
