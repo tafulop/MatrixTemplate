@@ -50,7 +50,6 @@ void MatrixTest::add_m22(){
             CPPUNIT_ASSERT(sum(i,j) == (a(i,j) + b(i,j)));
         }
     }
-
 }
 
 void MatrixTest::add_incompatible() {
@@ -106,5 +105,46 @@ void MatrixTest::sub_incompatible() {
     Matrix<int> result(2, 2);
 
     CPPUNIT_ASSERT_THROW(result = a - b, std::range_error);
+
+}
+
+void MatrixTest::assign_test() {
+
+    Matrix<int> a(2, 3);
+    int number = 1;
+
+    for (int i = 0; i < 2; i++) {
+        for (int j = 0; j < 3; j++) {
+            a(i, j) = number++;
+        }
+    }
+
+    number = 1;
+    for (int i = 0; i < 2; i++) {
+        for (int j = 0; j < 3; j++) {
+            CPPUNIT_ASSERT(a(i, j) == number++);
+        }
+    }
+}
+
+void MatrixTest::copy_construct() {
+    
+    Matrix<int> a(2, 3);
+    int number = 1;
+
+    for (int i = 0; i < 2; i++) {
+        for (int j = 0; j < 3; j++) {
+            a(i, j) = number++;
+        }
+    }
+
+    Matrix<int> b = a;
+
+    for (int i = 0; i < 2; i++) {
+        for (int j = 0; j < 3; j++) {
+            CPPUNIT_ASSERT(a(i, j) == b(i,j));
+        }
+    }
+
 
 }

@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Matrix", "Matrix\Matrix.vcxproj", "{34E4D7D8-7D59-4E47-899D-8F9EC123CD16}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TickGenerator", "TickGenerator\TickGenerator.vcxproj", "{35A60CB8-1D91-4486-8C5A-2748C5FF9270}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{34E4D7D8-7D59-4E47-899D-8F9EC123CD16}.Release|x64.Build.0 = Release|x64
 		{34E4D7D8-7D59-4E47-899D-8F9EC123CD16}.Release|x86.ActiveCfg = Release|Win32
 		{34E4D7D8-7D59-4E47-899D-8F9EC123CD16}.Release|x86.Build.0 = Release|Win32
+		{35A60CB8-1D91-4486-8C5A-2748C5FF9270}.Debug|x64.ActiveCfg = Debug|x64
+		{35A60CB8-1D91-4486-8C5A-2748C5FF9270}.Debug|x64.Build.0 = Debug|x64
+		{35A60CB8-1D91-4486-8C5A-2748C5FF9270}.Debug|x86.ActiveCfg = Debug|Win32
+		{35A60CB8-1D91-4486-8C5A-2748C5FF9270}.Debug|x86.Build.0 = Debug|Win32
+		{35A60CB8-1D91-4486-8C5A-2748C5FF9270}.Release|x64.ActiveCfg = Release|x64
+		{35A60CB8-1D91-4486-8C5A-2748C5FF9270}.Release|x64.Build.0 = Release|x64
+		{35A60CB8-1D91-4486-8C5A-2748C5FF9270}.Release|x86.ActiveCfg = Release|Win32
+		{35A60CB8-1D91-4486-8C5A-2748C5FF9270}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

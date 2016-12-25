@@ -5,15 +5,15 @@
 using namespace CppUnit;
 using namespace tobechanged;
 
-
-
 class MatrixTest : public TestFixture
 {
-
-    CPPUNIT_TEST_SUITE( MatrixTest );
+    CPPUNIT_TEST_SUITE(MatrixTest);
 
     CPPUNIT_TEST(simple_construct);
     CPPUNIT_TEST(init_all);
+
+    CPPUNIT_TEST(assign_test);
+    CPPUNIT_TEST(copy_construct);
 
     CPPUNIT_TEST(add_m22);
     CPPUNIT_TEST(add_incompatible);
@@ -26,6 +26,7 @@ class MatrixTest : public TestFixture
     // construction related tests
     void simple_construct();
     void init_all();
+    void copy_construct();
 
     // addition related tests
     void add_m22();
@@ -35,5 +36,7 @@ class MatrixTest : public TestFixture
     void sub_m22();
     void sub_incompatible();
 
-};
+    // assign
+    void assign_test();
 
+};

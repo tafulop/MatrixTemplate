@@ -1,7 +1,7 @@
 // ------------------------------------------------
 // A matrix template class.
 //
-//
+// 
 // ------------------------------------------------
 #ifndef __MATRIX_TEMPLATE__H_
 #define __MATRIX_TEMPLATE__H_
@@ -168,7 +168,7 @@ namespace tobechanged {
         // Common member funcs
         // --------------------------------------------------------
 
-        // init all matix elements to the given value
+        // inits all matix elements to the given value
         void init_all(T value = 0) {
             for (unsigned int r = 0; r < m_row_s; ++r) {
                 for (unsigned int c = 0; c < m_col_s; ++c) {
@@ -208,7 +208,6 @@ namespace tobechanged {
         // def. ctor is hidden
         Matrix() {}
 
-     
     };
 }
 
